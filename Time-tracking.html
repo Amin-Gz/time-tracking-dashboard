@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time-Tracking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      div {
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-black flex justify-center items-center md:h-screen md:w-[1440px]"
+  >
+    <div
+      class="py-[70px] md:py-0 md:w-[1500px] md:h-[580px] flex flex-col md:flex-row justify-center items-center gap-5"
+    >
+      <!-- 1 -->
+      <div class="w-[325px] md:w-[250px] h-[200px] md:h-[520px] bg-[#1D204B]">
+        <div
+          class="w-[325px] md:w-[250px] h-[135px] md:h-[350px] bg-[#5746EB] p-8"
+        >
+          <div class="flex flex-row md:flex-col gap-3 md:gap-0">
+            <img
+              src="./images/image-jeremy.png"
+              class="w-[70px] border-2 border-white rounded-full mb-10"
+              alt=""
+            />
+            <div class="info flex flex-col mt-3 md:mt-0">
+              <p class="text-[#C0BDFF] text-sm">Report for</p>
+              <h2
+                class="text-white text-[28px] md:text-[35px] font-extralight tracking-widem"
+              >
+                Jeremy Robson
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row md:flex-col">
+          <p
+            class="ml-7 mt-5 text-[#7B7DB9] hover:text-[#EDF3FF] hover:cursor-pointer"
+          >
+            Daily
+          </p>
+          <p class="ml-7 mt-5 text-[#EDF3FF] hover:cursor-pointer">Weekly</p>
+          <p
+            class="ml-7 mt-5 text-[#7B7DB9] hover:text-[#EDF3FF] hover:cursor-pointer"
+          >
+            Monthly
+          </p>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div
+        class="boxs grid md:grid-cols-3 grid-cols-1 grid-rows-6 md:grid-rows-2 gap-5"
+      >
+        <!-- 2.1 -->
+        <div
+          class="box w-[325px] md:w-[250px] h-[160px] md:h-[250px] bg-[#FE8C66] relative overflow-hidden"
+        >
+          <img
+            src="./images/icon-work.svg"
+            alt=""
+            class="absolute top-[-4px] right-2"
+          />
+          <div
+            class="innerbox w-[325px] md:w-[250px] h-[120px] md:h-[200px] bg-[#1D204B] absolute top-[50px] p-[30px] text-white hover:bg-[#34397B] hover:cursor-pointer"
+          >
+            <div class="flex justify-between mb-1 md:mb-5">
+              <p>Work</p>
+              <a
+                href="#"
+                class="md:text-lg text-[34px] mt-[-23px] md:mt-[-5px] text-[#7B7DB9] hover:text-[#EDF3FF]"
+                >...</a
+              >
+            </div>
+            <div
+              class="flex flex-row md:flex-col justify-between items-center md:items-start"
+            >
+              <h2
+                class="md:text-[40px] text-[28px] font-extralight mb-3 tracking-wide"
+              >
+                32hrs
+              </h2>
+              <p class="text-sm text-[#7578A7] mt-[-5px]">last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+        <!-- 2.2 -->
+        <div
+          class="box w-[325px] md:w-[250px] h-[160px] md:h-[250px] bg-[#55C3E6] relative overflow-hidden"
+        >
+          <img
+            src="./images/icon-play.svg"
+            alt=""
+            class="absolute top-[-4px] right-2"
+          />
+          <div
+            class="innerbox w-[325px] md:w-[250px] h-[120px] md:h-[200px] bg-[#1D204B] absolute top-[50px] p-[30px] text-white hover:bg-[#34397B] hover:cursor-pointer"
+          >
+            <div class="flex justify-between mb-1 md:mb-5">
+              <p>Play</p>
+              <a
+                href="#"
+                class="md:text-lg text-[34px] mt-[-23px] md:mt-[-5px] text-[#7B7DB9] hover:text-[#EDF3FF]"
+                >...</a
+              >
+            </div>
+            <div
+              class="flex flex-row md:flex-col justify-between items-center md:items-start"
+            >
+              <h2
+                class="md:text-[40px] text-[28px] font-extralight mb-3 tracking-wide"
+              >
+                10hrs
+              </h2>
+              <p class="text-sm text-[#7578A7] mt-[-5px]">last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+        <!-- 2.3 -->
+        <div
+          class="box w-[325px] md:w-[250px] h-[160px] md:h-[250px] bg-[#FF5D7D] relative overflow-hidden"
+        >
+          <img
+            src="./images/icon-study.svg"
+            alt=""
+            class="absolute top-[-4px] right-2"
+          />
+          <div
+            class="innerbox w-[325px] md:w-[250px] h-[120px] md:h-[200px] bg-[#1D204B] absolute top-[50px] p-[30px] text-white hover:bg-[#34397B] hover:cursor-pointer"
+          >
+            <div class="flex justify-between mb-1 md:mb-5">
+              <p>Study</p>
+              <a
+                href="#"
+                class="md:text-lg text-[34px] mt-[-23px] md:mt-[-5px] text-[#7B7DB9] hover:text-[#EDF3FF]"
+                >...</a
+              >
+            </div>
+
+            <div
+              class="flex flex-row md:flex-col justify-between items-center md:items-start"
+            >
+              <h2
+                class="md:text-[40px] text-[28px] font-extralight mb-3 tracking-wide"
+              >
+                4hrs
+              </h2>
+              <p class="text-sm text-[#7578A7]">last Week - 7hrs</p>
+            </div>
+          </div>
+        </div>
+        <!-- 2.4 -->
+        <div
+          class="box w-[325px] md:w-[250px] h-[160px] md:h-[250px] bg-[#4BCF82] relative overflow-hidden"
+        >
+          <img
+            src="./images/icon-exercise.svg"
+            alt=""
+            class="absolute top-[-4px] right-2"
+          />
+          <div
+            class="innerbox w-[325px] md:w-[250px] h-[120px] md:h-[200px] bg-[#1D204B] absolute top-[50px] p-[30px] text-white hover:bg-[#34397B] hover:cursor-pointer"
+          >
+            <div class="flex justify-between mb-1 md:mb-5">
+              <p>Exercise</p>
+              <a
+                href="#"
+                class="md:text-lg text-[34px] mt-[-23px] md:mt-[-5px] hover:text-[#EDF3FF]"
+                >...</a
+              >
+            </div>
+            <div
+              class="flex flex-row md:flex-col justify-between items-center md:items-start"
+            >
+              <h2
+                class="md:text-[40px] text-[28px] font-extralight mb-3 tracking-wide"
+              >
+                4hrs
+              </h2>
+              <p class="text-sm text-[#7578A7]">last Week - 5hrs</p>
+            </div>
+          </div>
+        </div>
+        <!-- 2.5 -->
+        <div
+          class="box w-[325px] md:w-[250px] h-[160px] md:h-[250px] bg-[#7335D2] relative overflow-hidden"
+        >
+          <img
+            src="./images/icon-social.svg"
+            alt=""
+            class="absolute top-[-4px] right-2"
+          />
+          <div
+            class="innerbox w-[325px] md:w-[250px] h-[120px] md:h-[200px] bg-[#1D204B] absolute top-[50px] p-[30px] text-white hover:bg-[#34397B] hover:cursor-pointer"
+          >
+            <div class="flex justify-between mb-1 md:mb-5">
+              <p>Social</p>
+              <a
+                href="#"
+                class="md:text-lg text-[34px] mt-[-23px] md:mt-[-5px] hover:text-[#EDF3FF]"
+                >...</a
+              >
+            </div>
+            <div
+              class="flex flex-row md:flex-col justify-between items-center md:items-start"
+            >
+              <h2
+                class="md:text-[40px] text-[28px] font-extralight mb-3 tracking-wide"
+              >
+                5hrs
+              </h2>
+              <p class="text-sm text-[#7578A7]">last Week - 10hrs</p>
+            </div>
+          </div>
+        </div>
+        <!-- 2.6 -->
+        <div
+          class="box w-[325px] md:w-[250px] h-[160px] md:h-[250px] bg-[#F1C65A] relative overflow-hidden"
+        >
+          <img
+            src="./images/icon-self-care.svg"
+            alt=""
+            class="absolute top-[-4px] right-2"
+          />
+          <div
+            class="innerbox w-[325px] md:w-[250px] h-[120px] md:h-[200px] bg-[#1D204B] absolute top-[50px] p-[30px] text-white hover:bg-[#34397B] hover:cursor-pointer"
+          >
+            <div class="flex justify-between mb-1 md:mb-5">
+              <p>Self Care</p>
+              <a
+                href="#"
+                class="md:text-lg text-[34px] mt-[-23px] md:mt-[-5px] hover:text-[#EDF3FF]"
+                >...</a
+              >
+            </div>
+            <div
+              class="flex flex-row md:flex-col justify-between items-center md:items-start"
+            >
+              <h2
+                class="md:text-[40px] text-[28px] font-extralight mb-3 tracking-wide"
+              >
+                2hrs
+              </h2>
+              <p class="text-sm text-[#7578A7]">last Week - 2hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
